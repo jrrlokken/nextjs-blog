@@ -127,9 +127,11 @@ server {
 }
 ```
 
+</div>
+<div style="background-color: rgb(50, 50, 50); color: white; padding: 0 5px;">
+
 ```jsx
 # vim /etc/nginx/sites-available/<backend_domain>.conf
-# ln -s /etc/nginx/sites-available/<backend_domain>.conf /etc/nginx/sites-enabled/
 
 server {
         listen 80;
@@ -155,6 +157,9 @@ server {
 }
 ```
 
+</div>
+<div style="background-color: rgb(50, 50, 50); color: white; padding: 0 5px;">
+
 ```jsx
 # ln -s /etc/nginx/sites-available/<frontend_domain>.conf /etc/nginx/sites-enabled/
 # ln -s /etc/nginx/sites-available/<backend_domain>.conf /etc/nginx/sites-enabled/
@@ -177,7 +182,12 @@ server {
 │ 0   │ maskup-backend     │ default     │ 0.37.2  │ fork    │ 23801    │ 42h    │ 4    │ online    │ 0%       │ 51.8mb   │ joshua   │ disabled │
 │ 1   │ maskup-frontend    │ default     │ 0.37.2  │ fork    │ 12511    │ 20h    │ 84   │ online    │ 0%       │ 55.5mb   │ joshua   │ disabled │
 └─────┴────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+```
 
+</div>
+<div style="background-color: rgb(50, 50, 50); color: white; padding: 0 5px;">
+
+```
 # netstat -tupln | grep LISTEN
 
 (Not all processes could be identified, non-owned process info
@@ -192,4 +202,4 @@ tcp6       0      0 :::3000                 :::*                    LISTEN      
 
 </div>
 
-This is the down-and-dirty — I'm sure there are things I've left out, and I assumed some things along the way (like you know how to use the 'vim' editor, etc.). If you have _any_ questions, please do not hesitate to hit me up in Slack. Cheers 🙂
+This is the down-and-dirty — I'm sure there are things I've left out, and I assumed some things along the way (like you know how to use the 'vim' editor, etc.). If you have _any_ questions, please do not hesitate to hit me up via [email](mailto:joshualokken@pm.me). Cheers 🙂
